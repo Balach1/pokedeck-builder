@@ -1,0 +1,24 @@
+{
+  "name": "pokedeck-builder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "prestart": "yarn build",
+    "start": "nodemon --watch build build/Server.js",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.0",
+    "@types/mongoose": "^5.2.7",
+    "nodemon": "^1.18.3",
+    "typescript": "^3.0.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv-safe": "^6.0.0",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.9",
+    "pokemontcgsdk": "^1.1.0"
+  }
+}
